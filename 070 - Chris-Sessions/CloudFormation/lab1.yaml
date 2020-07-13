@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Basic S3 Cloudformation Template
+Resources:
+  S3BucketForContent:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+Outputs:
+  BucketName:
+    Value: !Ref S3BucketForContent
