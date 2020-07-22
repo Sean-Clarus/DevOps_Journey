@@ -1,0 +1,10 @@
+Finding your shell
+    echo $0
+
+Finding all available shells
+    cat /etc/shells
+
+All other info:
+    cat /etc/passwd
+
+cat is short for 
