@@ -4,7 +4,85 @@ Finding your shell
 Finding all available shells
     cat /etc/shells
 
-All other info:
+All other info: (shows your shell)
     cat /etc/passwd
 
-cat is short for 
+The cat (short for “concatenate“) command is one of the most frequently used command 
+in Linux/Unix like operating systems. cat command allows us to create single or multiple files, 
+view contain of file, concatenate files and redirect output in terminal or files.
+
+Type of Linux shells
+    Gnome --> Desktop GUI for Linux
+    KDE --> Desktop GUI for Linux
+    sh
+    bash (born again shell) ( a lot of enhanced features)
+    csh and tcsh
+    ksh
+
+To change shells, just type the name and enter. Type exit when to exit
+
+Absolute path vs Relative path
+
+Even in the same directory, we need to type ./xyz-script to open the file
+
+File Permissions:
+    rwxr-xr-x
+    root-group-all others
+
+To change permissions:
+    chmod a+x script-name (also numbers can be used)
+
+The permission number can consist of three or four digits, ranging from 0 to 7.
+
+When 3 digits number is used, the first digit represents the permissions of the file’s owner,
+the second one the file’s group and the last one all other users.
+
+The write, read, and execute permissions have the following number value:
+
+r (read) = 4
+w (write) = 2
+x (execute) = 1
+no permissions = 0
+
+Each digit of the permissions number may be a sum of 4, 2, 1 and 0:
+
+0 (0+0+0) – No permission.
+1 (0+0+1) – Only execute permission.
+2 (0+2+0) – Only write permission.
+3 (0+2+1) – Write and execute permissions.
+4 (4+0+0) – Only read permission.
+5 (4+0+1) – Read and execute permission.
+6 (4+2+0) – Read and write permissions.
+7 (4+2+1) – Read, write, and execute permission.
+
+For example, if the permission number is set to 750 it means that the file’s owner has read, write and execute permission, file’s group has read and execute permissions, and other users have no permissions:
+
+Owner: rwx=4+2+1=7
+Group: r-x=4+0+1=5
+Others: r-x=0+0+0=0
+
+File ownership can be changed using the chown command and permissions with the chmod command.
+
+Define shell
+(#!/bin/bash)
+
+Comments
+(# comments)
+
+Define variables
+(e.g name=sean)
+
+Commands
+(echo, cp, grep etc)
+
+Statements
+(if, while, for etc.)
+
+
+sudo su
+rm
+mkdir
+rm -rf
+echo: echo command in linux is used to display line of text/string that are passed 
+as an argument . This is a built in command that is  mostly used in 
+shell scripts and batch files to output status text to the screen or a file.
